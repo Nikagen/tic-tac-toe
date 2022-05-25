@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom/client';
 
 import Home from './pages/Home/Home';
 import Game from './pages/Game/Game';
+import Auth from './components/AuthForm/AuthForm';
+import Reg from './components/RegForm/RegForm';
 
 import {
   BrowserRouter,
@@ -19,7 +21,8 @@ const root = ReactDOM.createRoot(
 root.render ( 
   <React.StrictMode>
     <BrowserRouter>
-      <Home/>
+     <Auth />
+     <Reg />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/game' element={<Game />} />
